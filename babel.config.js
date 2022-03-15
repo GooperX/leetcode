@@ -5,7 +5,9 @@ module.exports = function (api) {
     [
       '@babel/preset-env',
       {
-        targets: 'last 1 version,> 1%,not dead',
+        targets: {
+          node: 'current'
+        },
         corejs: 3,
         useBuiltIns: 'usage' // 按需加载 减小打包体积 并自动引入core-js 和 regenerator-runtime
       }

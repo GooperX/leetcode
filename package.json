@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
+    "@jest/types": "^27.5.1",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "@types/webpack": "^5.28.0",
     "babel-loader": "^8.2.3",
@@ -23,6 +25,7 @@
     "fork-ts-checker-webpack-plugin": "^7.2.1",
     "handlebars": "^4.7.7",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2",
     "webpack": "^5.70.0",
