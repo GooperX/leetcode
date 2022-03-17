@@ -3,6 +3,7 @@ import { twoSum } from './simple/two-sum'
 import { isPalindrome } from './simple/isPalindrome'
 import { longestCommonPrefix } from './simple/longestCommonPrefix'
 import { removeDuplicates } from './simple/removeDuplicates'
+import { searchInsert } from './simple/searchInsert'
 
 // console.log('res1', twoSum([2,7,11,15], 13))
 // console.log('res2', twoSum([3,2,4], 6))
@@ -27,8 +28,14 @@ import { removeDuplicates } from './simple/removeDuplicates'
 // console.log('res3', removeDuplicates([1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 9]))
 // console.log('res4', removeDuplicates([1, 2, 3, 4, 5]))
 
-console.log('res1', removeElement([1, 3, 5, 7, 9, 11, 12, 12, 12, 13], 12))
-console.log('res2', removeElement([1, 2, 3, 4, 4, 4, 5, 6], 4))
-console.log('res3', removeElement([1, 1, 1, 2, 3, 4, 5, 6, 9], 1))
-console.log('res4', removeElement([1, 2, 3, 4, 5], 4))
-console.log('res5', removeElement([3, 2, 2, 3], 3))
+// console.log('res1', removeElement([1, 3, 5, 7, 9, 11, 12, 12, 12, 13], 12))
+// console.log('res2', removeElement([1, 2, 3, 4, 4, 4, 5, 6], 4))
+// console.log('res3', removeElement([1, 1, 1, 2, 3, 4, 5, 6, 9], 1))
+// console.log('res4', removeElement([1, 2, 3, 4, 5], 4))
+// console.log('res5', removeElement([3, 2, 2, 3], 3))
+
+console.log('res1', searchInsert([1, 3, 5, 7, 9, 11, 13], 12))
+console.log('res2', searchInsert([1, 2, 3, 5, 6], 4))
+console.log('res3', searchInsert([2, 3, 4, 5, 6, 9], 1))
+console.log('res4', searchInsert([1, 2, 3, 4, 5], 4))
+console.log('res5', searchInsert([], 3))
